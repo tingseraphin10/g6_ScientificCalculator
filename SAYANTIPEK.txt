@@ -38,7 +38,7 @@ def format_number(num):
 def calc():
     try:
         expr = entry.get()
-        expr = expr.replace("×", "*").replace("÷", "/")
+        expr = expr.replace("×", "*").replace("÷", "/").replace("^", "**").replace("π", str(math.pi))
         
         #temporary code/value A-D
         
@@ -127,3 +127,4 @@ for row in buttons:
         ).pack(side="left", expand=True, fill="both", padx=1, pady=1)
 
 root.mainloop()
+
